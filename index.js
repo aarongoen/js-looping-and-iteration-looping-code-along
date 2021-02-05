@@ -1,18 +1,19 @@
 // Code your solutions in this file
 
-const names = ["Lisa", "Kaitlin", "Jan"];
-let event = "birthday"
 
 function writeCards(names, event) {
-   
+    let newnames = []
     for (let i = 0; i < names.length; i++) {
-        console.log(`Thank you, ${names[i]}, for the wonderful ${event} gift!`);
+        newnames.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`);
     }
+
+    return newnames;
 }   
 
-writeCards(names, event);
 
-// let countDown = 0
-// while (countDown > 0) {
-//     console.log(countDown--);
-// }
+function countDown(i) {
+    while (i > -1) {
+    console.log(i--);
+    }
+    i
+}
